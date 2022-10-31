@@ -17,7 +17,7 @@ it('can install package and has blacklist configuration', function () {
 it('can validate disposable email', function () {
     Artisan::call('blacklist:install');
 
-    expect(function() {
+    expect(function () {
         Validator::validate([
             'email' => 'malinator.com',
         ], [
