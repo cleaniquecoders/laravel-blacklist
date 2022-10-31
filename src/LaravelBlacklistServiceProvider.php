@@ -2,9 +2,9 @@
 
 namespace Bekwoh\LaravelBlacklist;
 
+use Bekwoh\LaravelBlacklist\Commands\LaravelBlacklistCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Bekwoh\LaravelBlacklist\Commands\LaravelBlacklistCommand;
 
 class LaravelBlacklistServiceProvider extends PackageServiceProvider
 {

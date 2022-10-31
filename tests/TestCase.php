@@ -2,9 +2,9 @@
 
 namespace Bekwoh\LaravelBlacklist\Tests;
 
+use Bekwoh\LaravelBlacklist\LaravelBlacklistServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Bekwoh\LaravelBlacklist\LaravelBlacklistServiceProvider;
 
 class TestCase extends Orchestra
 {
