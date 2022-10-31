@@ -14,13 +14,13 @@ class LaravelBlacklistCommand extends Command
     {
         $target = config('blacklist.path');
 
-        if(file_exists($target)) {
+        if (file_exists($target)) {
             unlink($target);
         }
 
         $directory = dirname($target);
 
-        if(! file_exists($directory)) {
+        if (! file_exists($directory)) {
             mkdir($directory);
         }
 
@@ -28,8 +28,9 @@ class LaravelBlacklistCommand extends Command
 
         copy($source, $target);
 
-        if(! file_exists($target)) {
+        if (! file_exists($target)) {
             $this->error("Unable to created $target");
+
             return self::FAILURE;
         }
 
