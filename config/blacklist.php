@@ -1,6 +1,8 @@
 <?php
 
-// config for Bekwoh/LaravelBlacklist
 return [
-
+    /**
+     * List of custom blacklist domains.
+     */
+    'domains' => [],
 ];

@@ -18,8 +18,6 @@ class LaravelBlacklistServiceProvider extends PackageServiceProvider
         $package
             ->name('laravel-blacklist')
             ->hasConfigFile()
-            ->hasViews()
-            ->hasMigration('create_laravel-blacklist_table')
             ->hasCommand(LaravelBlacklistCommand::class);
     }
 }
