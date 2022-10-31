@@ -2,6 +2,7 @@
 
 namespace Bekwoh\LaravelBlacklist\Rules;
 
+use Bekwoh\LaravelBlacklist\LaravelBlacklist;
 use Illuminate\Contracts\Validation\InvokableRule;
 use Illuminate\Support\Str;
 
@@ -19,7 +20,7 @@ class Blacklist implements InvokableRule
     {
         $domain = Str::after(strtolower($value), '@');
 
-        if (in_array($domain, disposable_email_domains())) {
+        if (in_array($domain, LaravelBlacklist::list())) {
             $fail("Invalid email domain $domain used.");
         }
     }
