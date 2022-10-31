@@ -1,5 +1,5 @@
 <?php
 
-use VendorName\Skeleton\Tests\TestCase;
+use Bekwoh\LaravelBlacklist\Tests\TestCase;
 
 uses(TestCase::class)->in(__DIR__);
