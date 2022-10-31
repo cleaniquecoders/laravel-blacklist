@@ -6,13 +6,34 @@ use Illuminate\Console\Command;
 
 class LaravelBlacklistCommand extends Command
 {
-    public $signature = 'laravel-blacklist';
+    public $signature = 'blacklist:install';
 
-    public $description = 'My command';
+    public $description = 'Install Laravel Blacklist';
 
     public function handle(): int
     {
-        $this->comment('All done');
+        $target = config('blacklist.path');
+
+        if(file_exists($target)) {
+            unlink($target);
+        }
+
+        $directory = dirname($target);
+
+        if(! file_exists($directory)) {
+            mkdir($directory);
+        }
+
+        $source = __DIR__.'/../../storage/data/disposable-email-domain.json';
+
+        copy($source, $target);
+
+        if(! file_exists($target)) {
+            $this->error("Unable to created $target");
+            return self::FAILURE;
+        }
+
+        $this->comment('Blacklist installed.');
 
         return self::SUCCESS;
     }
