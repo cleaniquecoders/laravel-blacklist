@@ -3,6 +3,7 @@
 namespace Bekwoh\LaravelBlacklist;
 
 use Bekwoh\LaravelBlacklist\Commands\LaravelBlacklistCommand;
+use Illuminate\Support\Facades\Validator;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
