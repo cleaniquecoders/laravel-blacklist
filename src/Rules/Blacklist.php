@@ -3,20 +3,18 @@
 namespace CleaniqueCoders\LaravelBlacklist\Rules;
 
 use CleaniqueCoders\LaravelBlacklist\LaravelBlacklist;
-use Illuminate\Contracts\Validation\InvokableRule;
+use Closure;
+use Illuminate\Contracts\Validation\ValidationRule;
 use Illuminate\Support\Str;
 
-class Blacklist implements InvokableRule
+class Blacklist implements ValidationRule
 {
     /**
      * Run the validation rule.
      *
-     * @param  string  $attribute
-     * @param  mixed  $value
      * @param  \Closure(string): \Illuminate\Translation\PotentiallyTranslatedString  $fail
-     * @return void
      */
-    public function __invoke($attribute, $value, $fail)
+    public function validate(string $attribute, mixed $value, Closure $fail): void
     {
         $domain = Str::after(strtolower($value), '@');
 
