@@ -1,6 +1,6 @@
 <?php
 
-namespace Bekwoh\LaravelBlacklist\Commands;
+namespace CleaniqueCoders\LaravelBlacklist\Commands;
 
 use Illuminate\Console\Command;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Bekwoh\LaravelBlacklist;
+namespace CleaniqueCoders\LaravelBlacklist;
 
 use Illuminate\Support\Facades\Cache;
 

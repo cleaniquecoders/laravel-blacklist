@@ -1,6 +1,6 @@
 <?php
 
-use Bekwoh\LaravelBlacklist\Rules\Blacklist;
+use CleaniqueCoders\LaravelBlacklist\Rules\Blacklist;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Validation\ValidationException;

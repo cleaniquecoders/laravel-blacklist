@@ -1,16 +1,16 @@
 <?php
 
-namespace Bekwoh\LaravelBlacklist\Facades;
+namespace CleaniqueCoders\LaravelBlacklist\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @see \Bekwoh\LaravelBlacklist\LaravelBlacklist
+ * @see \CleaniqueCoders\LaravelBlacklist\LaravelBlacklist
  */
 class LaravelBlacklist extends Facade
 {
     protected static function getFacadeAccessor()
     {
-        return \Bekwoh\LaravelBlacklist\LaravelBlacklist::class;
+        return \CleaniqueCoders\LaravelBlacklist\LaravelBlacklist::class;
     }
 }
