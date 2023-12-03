@@ -1,8 +1,8 @@
 <?php
 
-namespace Bekwoh\LaravelBlacklist;
+namespace CleaniqueCoders\LaravelBlacklist;
 
-use Bekwoh\LaravelBlacklist\Commands\LaravelBlacklistCommand;
+use CleaniqueCoders\LaravelBlacklist\Commands\LaravelBlacklistCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 

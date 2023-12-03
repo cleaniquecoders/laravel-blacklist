@@ -1,12 +1,12 @@
 {
-    "name": "bekwoh/laravel-blacklist",
+    "name": "cleaniquecoders/laravel-blacklist",
     "description": "Validation disposable email domain",
     "keywords": [
-        "bekwoh",
+        "cleaniquecoders",
         "laravel",
         "laravel-blacklist"
     ],
-    "homepage": "https://github.com/bekwoh/laravel-blacklist",
+    "homepage": "https://github.com/cleaniquecoders/laravel-blacklist",
     "license": "MIT",
     "authors": [
         {
@@ -34,13 +34,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Bekwoh\\LaravelBlacklist\\": "src",
-            "Bekwoh\\LaravelBlacklist\\Database\\Factories\\": "database/factories"
+            "CleaniqueCoders\\LaravelBlacklist\\": "src",
+            "CleaniqueCoders\\LaravelBlacklist\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Bekwoh\\LaravelBlacklist\\Tests\\": "tests"
+            "CleaniqueCoders\\LaravelBlacklist\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -60,10 +60,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Bekwoh\\LaravelBlacklist\\LaravelBlacklistServiceProvider"
+                "CleaniqueCoders\\LaravelBlacklist\\LaravelBlacklistServiceProvider"
             ],
             "aliases": {
-                "LaravelBlacklist": "Bekwoh\\LaravelBlacklist\\Facades\\LaravelBlacklist"
+                "LaravelBlacklist": "CleaniqueCoders\\LaravelBlacklist\\Facades\\LaravelBlacklist"
             }
         }
     },

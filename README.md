@@ -1,9 +1,9 @@
 # Validate Disposable Email Domain
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/bekwoh/laravel-blacklist.svg?style=flat-square)](https://packagist.org/packages/bekwoh/laravel-blacklist)
-[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/bekwoh/laravel-blacklist/run-tests?label=tests)](https://github.com/bekwoh/laravel-blacklist/actions?query=workflow%3Arun-tests+branch%3Amain)
-[![GitHub Code Style Action Status](https://img.shields.io/github/workflow/status/bekwoh/laravel-blacklist/Fix%20PHP%20code%20style%20issues?label=code%20style)](https://github.com/bekwoh/laravel-blacklist/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
-[![Total Downloads](https://img.shields.io/packagist/dt/bekwoh/laravel-blacklist.svg?style=flat-square)](https://packagist.org/packages/bekwoh/laravel-blacklist)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/cleaniquecoders/laravel-blacklist.svg?style=flat-square)](https://packagist.org/packages/cleaniquecoders/laravel-blacklist)
+[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/cleaniquecoders/laravel-blacklist/run-tests?label=tests)](https://github.com/cleaniquecoders/laravel-blacklist/actions?query=workflow%3Arun-tests+branch%3Amain)
+[![GitHub Code Style Action Status](https://img.shields.io/github/workflow/status/cleaniquecoders/laravel-blacklist/Fix%20PHP%20code%20style%20issues?label=code%20style)](https://github.com/cleaniquecoders/laravel-blacklist/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
+[![Total Downloads](https://img.shields.io/packagist/dt/cleaniquecoders/laravel-blacklist.svg?style=flat-square)](https://packagist.org/packages/cleaniquecoders/laravel-blacklist)
 
 Validate the email provided either in the list of blacklisted domain.
 
@@ -12,7 +12,7 @@ Validate the email provided either in the list of blacklisted domain.
 You can install the package via composer:
 
 ```bash
-composer require bekwoh/laravel-blacklist
+composer require cleaniquecoders/laravel-blacklist
 ```
 
 You can publish the config file with:
@@ -24,7 +24,7 @@ php artisan vendor:publish --tag="laravel-blacklist-config"
 ## Usage
 
 ```php
-use Bekwoh\LaravelBlacklist\Rules\Blacklist;
+use CleaniqueCoders\LaravelBlacklist\Rules\Blacklist;
 
 $request->validate([
     'email' => [new Blacklist]

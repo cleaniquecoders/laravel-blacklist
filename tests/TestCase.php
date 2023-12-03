@@ -1,8 +1,8 @@
 <?php
 
-namespace Bekwoh\LaravelBlacklist\Tests;
+namespace CleaniqueCoders\LaravelBlacklist\Tests;
 
-use Bekwoh\LaravelBlacklist\LaravelBlacklistServiceProvider;
+use CleaniqueCoders\LaravelBlacklist\LaravelBlacklistServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
 
@@ -13,7 +13,7 @@ class TestCase extends Orchestra
         parent::setUp();
 
         Factory::guessFactoryNamesUsing(
-            fn (string $modelName) => 'Bekwoh\\LaravelBlacklist\\Database\\Factories\\'.class_basename($modelName).'Factory'
+            fn (string $modelName) => 'CleaniqueCoders\\LaravelBlacklist\\Database\\Factories\\'.class_basename($modelName).'Factory'
         );
     }
 

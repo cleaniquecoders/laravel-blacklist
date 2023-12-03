@@ -1,8 +1,8 @@
 <?php
 
-namespace Bekwoh\LaravelBlacklist\Rules;
+namespace CleaniqueCoders\LaravelBlacklist\Rules;
 
-use Bekwoh\LaravelBlacklist\LaravelBlacklist;
+use CleaniqueCoders\LaravelBlacklist\LaravelBlacklist;
 use Illuminate\Contracts\Validation\InvokableRule;
 use Illuminate\Support\Str;
 
