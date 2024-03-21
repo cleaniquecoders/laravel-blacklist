@@ -2,6 +2,10 @@
 
 All notable changes to `laravel-blacklist` will be documented in this file.
 
+## Added Laravel 11 Support - 2024-03-21
+
+**Full Changelog**: https://github.com/cleaniquecoders/laravel-blacklist/compare/1.2.0...1.3.0
+
 ## 1.2.0 - 2023-12-03
 
 ### What's Changed
