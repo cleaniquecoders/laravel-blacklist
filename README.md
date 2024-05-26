@@ -21,6 +21,12 @@ You can publish the config file with:
 php artisan vendor:publish --tag="blacklist-config"
 ```
 
+Then install list of disposable email list:
+
+```bash
+php artisan blacklist:install
+```
+
 ## Usage
 
 ```php
