@@ -18,7 +18,7 @@ composer require cleaniquecoders/laravel-blacklist
 You can publish the config file with:
 
 ```bash
-php artisan vendor:publish --tag="laravel-blacklist-config"
+php artisan vendor:publish --tag="blacklist-config"
 ```
 
 ## Usage
