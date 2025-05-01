@@ -2,6 +2,10 @@
 
 All notable changes to `laravel-blacklist` will be documented in this file.
 
+## 1.4.0 - 2025-05-01
+
+**Full Changelog**: https://github.com/cleaniquecoders/laravel-blacklist/compare/1.3.1...1.4.0
+
 ## 1.3.1 - 2024-05-26
 
 **Full Changelog**: https://github.com/cleaniquecoders/laravel-blacklist/compare/1.3.0...1.3.1
