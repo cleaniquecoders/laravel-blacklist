@@ -1,0 +1,1 @@
+{"version":"pest_2.36.1","defects":[],"times":{"P\\Tests\\BlacklistTest::__pest_evaluable_it_can_install_package_and_has_blacklist_configuration":0.087,"P\\Tests\\BlacklistTest::__pest_evaluable_it_can_validate_disposable_email":0.034}}
